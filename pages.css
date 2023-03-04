@@ -1,16 +1,12 @@
 body,
 html {
     background-color: #110429;
-    margin-top: 5%;
-    
 }
 
 .nav {
     display: flex;
 }
-.div_main{
-    margin-top: 30%;
-}
+
 #logo-nav {
     padding: 3px;
     margin: 2%;
@@ -43,33 +39,31 @@ html {
     padding-top: 3px;
 }
 
-#msg {
+#msg1,#msg2,#msg3 {
     color: #110429;
     font-weight: bolder;
-    margin-top: 5%;
-    margin-left: 4%;
-    margin-right: 2%;
-    align-items: center;
-    
-}
-
-h1 {
+    margin: 1% 4%;
+    padding: 0.3% 2%;
+    padding: 2px;
     background-color: rgb(218, 62, 140);
     border-radius: 15px;
-    padding: 1%;
-    font-size: x-large;
+    padding: 0.5% 2%;
 }
 
-#text {
-    font-size: 105%;
-    text-align: left;
-    line-height: 150%;;
+
+
+#text1,#text2,#text3 {
+    /* margin-top: 1%; */
+    font-size: x-large;
+    text-align: justify;
     margin-left: 2%;
     margin-right: 2%;
-    margin-top: 5%;
+    margin-top: 1%;
     padding: 0 2%;
 }
-
+#visible{
+    opacity: 0;
+}
 [data-ca3_icon]::before {
     font-weight: bold;
     content: attr(data-ca3_icon);
@@ -101,7 +95,23 @@ h1 {
     animation: ca3_fade_move_down 2s ease-in-out infinite;
 }
 
+.btn {
+    background-color: rgb(218, 62, 140);
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 3%;
+  }
 
+  #btn {
+    display: grid;
+    justify-items: center;
+    text-justify: center;
+    text-align: center;
+  }
+
+  .btn:hover {
+    color: rgb(218, 62, 140);
+    background-color: #110429;}
 /*animated scroll arrow animation*/
 @-webkit-keyframes ca3_fade_move_down {
     0% {

@@ -4,6 +4,22 @@ html {
     height: 100%;
 }
 
+@media (min-width: 320px)
+{
+    .div_main
+    {
+        margin-top: 30%;
+    }
+}
+
+@media (min-width: 1025px)
+{
+    .div_main
+    {
+        margin-top: 5%;
+    }
+}
+
 .div1 {
     width: 50%;
     display: grid;
@@ -94,15 +110,17 @@ html {
     padding: 4px;
 }
 #icon1:hover{
-    color: rgb(218, 62, 140);
-    background-color: #110429;
+    
+    background-color: #f1f1f1;
     border: 2px solid white;
+    transition: 0.2s;
 }
 .scroll-down {
     color: white;
     text-shadow: 2px;
     cursor: pointer;
     opacity: 0;
+    text-decoration: none;
 }
 
 @keyframes scroll-down {
@@ -118,3 +136,4 @@ html {
         transform: translate(-50%, 0);
     }
 }
+
